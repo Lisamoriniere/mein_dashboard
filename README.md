@@ -19,11 +19,22 @@ Bestehende Einträge und ältere Sicherungen sind mit dieser Version weiterhin l
 - `index.html`: Struktur und Inhalte
 - `style.css`: Farben und Layout
 - `script.js`: Funktionen und lokale Speicherung
+- `assistant.js`: Bedienhilfe, KI-Verbindung und bestätigte Änderungsvorschläge
 
 ## Veröffentlichung mit GitHub Pages
 
-Die drei Website-Dateien im Hauptverzeichnis des Repositorys auf `main` speichern. In Settings → Pages unter Source „Deploy from a branch“ wählen, Branch `main` und Ordner `/ (root)` einstellen und speichern. Es ist kein eigener Workflow erforderlich.
+Die vier Website-Dateien im Hauptverzeichnis des Repositorys auf `main` speichern. In Settings → Pages unter Source „Deploy from a branch“ wählen, Branch `main` und Ordner `/ (root)` einstellen und speichern. Es ist kein eigener Workflow erforderlich.
 
 ## Änderungen speichern
 
 Ein Commit ist eine gespeicherte Version der Dateien mit einer kurzen Beschreibung. Änderungen auf `main` werden nach Aktivierung von Pages automatisch veröffentlicht.
+
+## Assistent
+
+Am Computer steht rechts eine Assistentenfläche, auf kleineren Bildschirmen unter dem Dashboard. Die Bedienhilfe funktioniert sofort. Echte KI-Antworten benötigen den separat vorbereiteten Assistentendienst und einen API-Zugang. Bei aktiver Verbindung werden nach Einwilligung Chat und Dashboard-Inhalte beim Senden an den Dienst und OpenAI übertragen. Änderungen werden erst nach Bestätigung gespeichert. Der Assistent kann Aufgaben, Notizen, Links, Termine, Veranstaltungen und Kontakte bearbeiten sowie Ansichten öffnen und Sicherungen herunterladen. GitHub-Dateien und fremde Anwendungen kann er nicht bearbeiten.
+
+Diese Version enthält noch keine Spracheingabe und kein Offline-Caching. Die lokale Syntax und Funktionslogik wurden geprüft; Live-KI und Darstellung müssen nach Aktivierung zusätzlich geprüft werden.
+
+## Mac-App
+
+In Safari ab macOS Sonoma: Ablage → Zum Dock hinzufügen. Browser und Web-App haben getrennte Daten. Eine Dashboard-Sicherung herunterladen und in der Web-App laden.
