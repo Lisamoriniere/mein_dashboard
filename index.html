@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#211c24">
+  <title>Lisas Dashboard</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23211c24'/%3E%3Cpath d='M10 8v16h13v-4h-9V8z' fill='%23c4a0ec'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><div><p class="eyebrow">MEIN ALLTAG</p><h1>Lisas Dashboard<span>.</span></h1><p id="date"></p></div><div class="header-actions"><button id="export" class="secondary">Sicherung herunterladen</button><label class="secondary import">Sicherung laden<input id="import" type="file" accept="application/json,.json"></label></div></header>
+    <nav aria-label="Bereiche"><button class="tab active" data-area="uni" aria-pressed="true">Uni</button><button class="tab" data-area="personal" aria-pressed="false">Persönliches</button><button class="tab" data-area="family" aria-pressed="false">Familie</button></nav>
+    <section class="section-heading"><div><p class="eyebrow" id="area-label">ZEIT ZUM LERNEN</p><h2 id="area-title">Uni</h2></div><p id="progress" aria-live="polite"></p></section>
+    <div class="grid">
+      <section class="card tasks"><h3>Meine Aufgaben</h3><form id="task-form"><label for="task-input" class="sr-only">Neue Aufgabe</label><input id="task-input" maxlength="180" placeholder="Was steht an?" required><button type="submit">Hinzufügen</button></form><ul id="tasks"></ul><p id="empty">Hier ist Platz für deinen nächsten Schritt.</p></section>
+      <section class="card notes"><h3>Meine Notizen</h3><label for="notes" class="sr-only">Notizen für diesen Bereich</label><textarea id="notes" placeholder="Gedanken, Ideen und Dinge, die du behalten möchtest …" maxlength="20000"></textarea><p class="small">Wird automatisch in diesem Browser gespeichert.</p></section>
+      <section class="card links"><h3>Wichtige Links</h3><ul id="links"></ul><form id="link-form"><label for="link-name" class="sr-only">Name des Links</label><input id="link-name" placeholder="Name, z. B. Uni-Portal" maxlength="100" required><label for="link-url" class="sr-only">Webadresse</label><input id="link-url" type="url" placeholder="https://…" required><button type="submit">Link speichern</button></form></section>
+    </div>
+    <footer>Ein Ort für das, was dir wichtig ist.<br><span>Deine Einträge bleiben in diesem Browser. Nutze die Sicherung, bevor du Browserdaten löschst oder das Gerät wechselst.</span></footer>
+    <p id="status" role="status"></p>
+  </main>
+</body>
+</html>
