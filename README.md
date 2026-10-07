@@ -8,7 +8,9 @@ Ein persönliches Dashboard in dunklen, warmen Farben mit lila Akzenten.
 - Persönliches
 - Familie
 
-Jeder Bereich enthält Aufgaben, Notizen und wichtige Links. Einträge werden lokal im Browser gespeichert. Sie werden nicht auf GitHub hochgeladen und nicht automatisch zwischen Geräten geteilt. Auf gemeinsam verwendeten Geräten können andere Personen mit demselben Browserprofil die Einträge sehen.
+Jeder Bereich enthält Aufgaben, Notizen, wichtige Links und Personen. Ein gemeinsamer Wochenkalender zeigt Termine und Geburtstage; im Uni-Bereich können wöchentliche Veranstaltungen mit Semesterzeitraum hinzugefügt werden. Stundenplan-Ausfälle und abwechselnde Wochen sind noch nicht enthalten. Einträge werden lokal im Browser gespeichert. Sie werden nicht auf GitHub hochgeladen und nicht automatisch zwischen Geräten geteilt. Auf gemeinsam verwendeten Geräten können andere Personen mit demselben Browserprofil die Einträge sehen.
+
+Bestehende Einträge und ältere Sicherungen sind mit dieser Version weiterhin lesbar. Ein Geburtstag am 29. Februar wird nur in Schaltjahren angezeigt. Personen sind Kontakte und erhalten keinen Zugang zum Dashboard.
 
 Über „Sicherung herunterladen“ lassen sich alle Einträge als JSON-Datei sichern. „Sicherung laden“ ersetzt die aktuellen Einträge nach einer Bestätigung. Browserdaten löschen entfernt auch die lokalen Einträge. Lokale Vorschau und veröffentlichte Website haben getrennte Speicher.
 
